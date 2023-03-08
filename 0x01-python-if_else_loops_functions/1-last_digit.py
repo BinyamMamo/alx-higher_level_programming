@@ -14,4 +14,3 @@ elif number % 10 < 6:
     else:
         print("Last digit of {} is ".format(number), end='')
         print("{} and is less than 6 and not 0".format(number % 10))
-

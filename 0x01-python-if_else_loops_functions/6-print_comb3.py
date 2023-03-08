@@ -6,3 +6,4 @@ for x in range(10):
             print("{}{}".format(x, y))
         else:
             print("{}{}".format(x, y), end=", ")
+
