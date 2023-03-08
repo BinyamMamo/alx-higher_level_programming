@@ -9,6 +9,6 @@ elif number % 10 == 0:
 elif number % 10 < 6:
     if number < 0:
         print("Last digit of {} is -{} and is less than 6 and not 0".format(number, number % 10))
-    else
+    else:
         print("Last digit of {} is {} and is less than 6 and not 0".format(number, number % 10))
 
