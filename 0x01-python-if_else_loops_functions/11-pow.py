@@ -12,10 +12,3 @@ def powr(a, b):
     if b < 1:
         return 1
     return a * powr(a, b - 1)
-
-
-print(pow(2, 3))
-print(pow(2, -3))
-print(pow(1, 3))
-print(pow(1, -3))
-print(pow(1, 0))
