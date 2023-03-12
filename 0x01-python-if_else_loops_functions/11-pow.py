@@ -2,7 +2,7 @@
 
 def pow(a, b):
     if b > 0:
-        return pow(a, b)
+        return powr(a, b)
     elif b == 0:
         return 1
     return 1 / powr(a, b * -1)
