@@ -6,7 +6,7 @@
 
 def multiply_by_2(a_dictionary):
     if a_dictionary is None or not len(a_dictionary):
-        return None
+        return a_dictionary
     copy = a_dictionary.copy()
     for key in copy.keys():
         copy[key] = copy[key] * 2
