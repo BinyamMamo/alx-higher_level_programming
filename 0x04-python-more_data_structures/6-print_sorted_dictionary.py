@@ -40,6 +40,6 @@ def check_sort(my_list=[]):
 
 # a_dictionary = {'language': "C", 'Number': 89,
 #                 'track': "Low level", 'ids': {3, 2, 1}}
-my_dict = {'languages': 'C', 'number': 13, 'track': 'Low level'}
+# my_dict = {'languages': 'C', 'number': 13, 'track': 'Low level'}
 
-print_sorted_dictionary(my_dict)
+# print_sorted_dictionary(my_dict)
