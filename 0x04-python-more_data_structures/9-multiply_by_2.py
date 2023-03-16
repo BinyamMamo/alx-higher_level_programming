@@ -4,7 +4,7 @@
 #     __import__('6-print_sorted_dictionary').print_sorted_dictionary
 
 
-def multiply_by_2(a_dictionary={}):
+def multiply_by_2(a_dictionary):
     if a_dictionary is None or not len(a_dictionary):
         return None
     new_values = list(map(lambda x: x * 2, a_dictionary.values()))
