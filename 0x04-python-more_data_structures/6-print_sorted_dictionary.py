@@ -3,7 +3,6 @@
 def print_sorted_dictionary(a_dictionary):
     sorted = list(a_dictionary.keys())
     state = True
-    print(sorted)
     if check_sort(sorted) >= len(sorted) - 1:
         state = False
     while state is True:
@@ -15,11 +14,7 @@ def print_sorted_dictionary(a_dictionary):
                 break
             i += 1
     for key in sorted:
-        print(f"{key}: ", end="")
-        if type(a_dictionary.get(key)) is dict:
-            print(a_dictionary.get(key))
-        else:
-            print(a_dictionary.get(key))
+        print(f"{key}: a_dictionary.get(key)", end="")
 
 
 def check_sort(my_list=[]):
@@ -45,4 +40,6 @@ def check_sort(my_list=[]):
 
 # a_dictionary = {'language': "C", 'Number': 89,
 #                 'track': "Low level", 'ids': {3, 2, 1}}
-# print_sorted_dictionary(a_dictionary)
+# my_dict = {'languages': 'C', 'number': 13, 'track': 'Low level'}
+
+# print_sorted_dictionary(my_dict)
