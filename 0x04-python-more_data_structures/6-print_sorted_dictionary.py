@@ -31,7 +31,7 @@ def check_sort(my_list=[]):
 #     # "akefafay": "me",
 #     "model": "Mustang",
 #     "year": "1964"
-# }
+#
 # a_dictionary = {'language': "C", 'Number': 89,
 #                 'track': "Low level", 'ids': {3, 2, 1}}
 # my_dict = {'languages': 'C', 'number': 13, 'track': 'Low level'}
