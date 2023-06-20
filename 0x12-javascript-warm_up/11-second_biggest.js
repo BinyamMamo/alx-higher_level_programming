@@ -3,8 +3,8 @@ const argc = process.argv.length;
 if (argc <= 3) {
   console.log(0);
 } else {
-  let max = 0;
-  let secMax = 0;
+  let max = Number.NEGATIVE_INFINITY;
+  let secMax = Number.NEGATIVE_INFINITY;
   for (let x = 2; x < argc; x++) {
     if (parseInt(process.argv[x]) > max) {
       max = parseInt(process.argv[x]);
@@ -15,5 +15,5 @@ if (argc <= 3) {
       secMax = parseInt(process.argv[x]);
     }
   }
-  console.log(secMax);
+  console.log('max: ' + max + ', second max: ' + secMax);
 }
