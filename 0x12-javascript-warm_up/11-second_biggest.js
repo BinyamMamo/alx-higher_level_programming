@@ -15,5 +15,5 @@ if (argc <= 3) {
       secMax = parseInt(process.argv[x]);
     }
   }
-  console.log('max: ' + max + ', second max: ' + secMax);
+  console.log(secMax);
 }
