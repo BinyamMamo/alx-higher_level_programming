@@ -6,8 +6,8 @@ class Square extends SquareParent {
     if (c === undefined) {
       c = 'X';
     }
-    for (let y = 0; y < super.width; y++) {
-      console.log(`${c}`.repeat(super.height));
+    for (let y = 0; y < this.width; y++) {
+      console.log(`${c}`.repeat(this.height));
     }
   }
 }
