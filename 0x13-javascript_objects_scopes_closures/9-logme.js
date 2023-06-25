@@ -2,5 +2,5 @@
 let num = -1;
 exports.logMe = function (item) {
   num += 1;
-  return (`${num}: ${item}`);
+  console.log(`${num}: ${item}`);
 };
