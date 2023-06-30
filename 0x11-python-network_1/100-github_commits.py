@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-"""Lists the 10 most recent commits on a given GitHub repository.
+"""fetches the recent 10 commits for a given repository
+and author, using the requests package
 
-Usage: ./100-github_commits.py <repository name> <repository owner>
+Usage: ./100-github_commits.py <REPOSITORY_NAME> <REPOSITORY_OWNER>
 """
 from sys import argv
 import requests
 
 
 if __name__ == "__main__":
-    url = f"https://api.github.com/repos/{argv[2]}/{argv[1]}/commits")
+    url = f"https://api.github.com/repos/{argv[2]}/{argv[1]}/commits"
 
     resp = requests.get(url)
     commits = resp.json()
