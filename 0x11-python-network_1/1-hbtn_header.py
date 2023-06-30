@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""fetches data from https://intranet.hbtn.io/status"""
+"""fetches data from the URL provided in the first argument and displays X-Request-Id"""
 from urllib import request
+import sys
 
 if __name__ == "__main__":
-    with request.urlopen("https://alx-intranet.hbtn.io/status") as resp:
-        resp.headers['X-Request-Id']
+    with request.urlopen(sys.argv[1]) as resp:
+        print (resp.headers['X-Request-Id'])
