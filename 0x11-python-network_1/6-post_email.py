@@ -9,4 +9,4 @@ import requests
 if __name__ == "__main__":
     payload = {"email": sys.argv[2]}
     with requests.post(sys.argv[1], data=payload) as resp:
-            print(resp.text)
+        print(resp.text)
