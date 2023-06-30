@@ -5,9 +5,9 @@ and displays X-Request-Id
 
 Usage: ./5-hbtn_header.py <URL>
 """
-import requests
 import sys
+import requests
 
 if __name__ == "__main__":
     with requests.get(sys.argv[1]) as resp:
-        print(resp.headers['X-Request-Id'])
+        print(resp.headers.get('X-Request-Id'))
