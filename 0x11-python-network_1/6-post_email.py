@@ -7,7 +7,6 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    params = {"email": sys.argv[2]}
-    req = requests.post(sys.argv[1], params=params)
+    req = requests.post(sys.argv[1], data={"email": sys.argv[2]})
     with requests.get(req) as resp:
         print(resp.text)
