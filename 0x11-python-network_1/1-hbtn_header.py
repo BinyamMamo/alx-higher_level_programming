@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""fetches data from the URL provided in the first argument 
+"""fetches data from the URL provided in the first argument
 and displays X-Request-Id
 
 Usage: ./1-hbtn_header.py <URL>
