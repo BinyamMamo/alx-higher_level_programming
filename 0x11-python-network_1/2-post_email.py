@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""fetches data from the URL provided in the first argument
-and displays X-Request-Id
+"""sends a POST request to the passed URL with the email as a parameter
 
-Usage: ./1-hbtn_header.py <URL>
+Usage: ./2-post_email.py <URL> <EMAIL>
 """
 from urllib import request
 from urllib import parse
@@ -15,4 +14,4 @@ if __name__ == "__main__":
     post = {"email": email}
 
     with request.urlopen(url + "?" + parse.urlencode(post)) as resp:
-        print(resp.read().decode("UTF-8"))
+        print(resp.read().decode("utf-8"))
