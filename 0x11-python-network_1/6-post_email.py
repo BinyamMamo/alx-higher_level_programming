@@ -7,6 +7,7 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    req = requests.post(sys.argv[1], data={"email": sys.argv[2]})
-    with requests.get(req.url) as resp:
-        print(resp.text)
+    payload = {"email": sys.argv[2]}
+    with requests.post(sys.argv[1], data=payload) as req:
+        with requests.get(req.url) as resp:
+            print(resp.text)
