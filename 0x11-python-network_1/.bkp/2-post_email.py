@@ -8,7 +8,10 @@ from urllib import parse
 import sys
 
 if __name__ == "__main__":
-    post = {"email": sys.argv[2]}
-    req = request.Request(sys.argv[1], parse.urlencode(post).encode('utf-8'))
-    with request.urlopen(req) as resp:
+    url = sys.argv[1]
+    email = sys.argv[2]
+
+    post = {"email": email}
+
+    with request.urlopen(url + "?" + parse.urlencode(post)) as resp:
         print(resp.read().decode("utf-8"))
