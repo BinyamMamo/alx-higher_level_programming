@@ -6,3 +6,6 @@ print ("Body response:")
 print (f"\t - type: {type(data)}")
 print (f"\t - content: {data}")
 print (f"\t - utf8 content: {data.decode('UTF-8')}")
+
+if __name__ == "__main__":
+  __main__()
