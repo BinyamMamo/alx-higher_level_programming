@@ -1,2 +1,2 @@
 -- displays the number of records with ID = 89 --
-SELECT COUNT(*) FROM first_table where id = 89;
+SELECT SUM(id = 89) FROM first_table;
