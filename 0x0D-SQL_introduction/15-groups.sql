@@ -1,0 +1,1 @@
+-- displays the occurence a score appeared --
