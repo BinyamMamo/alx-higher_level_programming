@@ -1,0 +1,1 @@
+-- List shows without genre using LEFT JOIN statement

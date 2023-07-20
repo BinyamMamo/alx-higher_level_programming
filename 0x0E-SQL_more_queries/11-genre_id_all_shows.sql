@@ -1,0 +1,1 @@
+-- List shows with genre using LEFT JOIN statement

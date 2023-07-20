@@ -1,0 +1,1 @@
+-- List cities using JOIN statement

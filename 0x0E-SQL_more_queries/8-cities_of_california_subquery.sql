@@ -1,0 +1,1 @@
+-- List cities of California using subquery

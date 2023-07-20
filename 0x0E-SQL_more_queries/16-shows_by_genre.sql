@@ -1,0 +1,1 @@
+-- List shows and genres using JOIN statement

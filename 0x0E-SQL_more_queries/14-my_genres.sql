@@ -1,0 +1,1 @@
+-- List genres of Dexter using JOIN statement

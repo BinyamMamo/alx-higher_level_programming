@@ -1,0 +1,1 @@
+-- List genres with number of shows using JOIN statement

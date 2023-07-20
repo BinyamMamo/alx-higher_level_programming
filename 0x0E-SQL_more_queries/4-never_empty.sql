@@ -1,0 +1,1 @@
+-- Create table id_not_null with id and name not null

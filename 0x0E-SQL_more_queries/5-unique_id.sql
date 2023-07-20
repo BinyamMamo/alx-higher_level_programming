@@ -1,0 +1,1 @@
+-- Create table unique_id with id unique and name not null
