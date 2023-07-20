@@ -23,3 +23,11 @@ This project is about SQL more queries and it covers topics such as creating use
 | 14. My genres | [14-my_genres.sql](14-my_genres.sql) | Uses the hbtn_0d_tvshows database to list all genres of the show Dexter using a JOIN statement. |
 | 15. Only Comedy | [15-comedy_only.sql](15-comedy_only.sql) | Lists all Comedy shows in the database hbtn_0d_tvshows using a JOIN statement. |
 | 16. List shows and genres | [16-shows_by_genre.sql](16-shows_by_genre.sql) | Lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows using a JOIN statement. |
+
+## Advanced Tasks
+
+| Tasks | File name | Description |
+| --- | --- | --- |
+| 17. Not my genre | [16-shows_by_genre.sql](16-shows_by_genre.sql) | List all genres not linked to the show Dexter |
+| 18. No Comedy tonight! | [100-not_my_genres.sql](100-not_my_genres.sql) | List all shows without the genre Comedy in the database hbtn_0d_tvshows |
+| 19. Rotten tomatoes | [101-not_a_comedy.sql](101-not_a_comedy.sql) | List all shows with a score greater or equal to 8.5 in the database hbtn_0d_tvshows |
