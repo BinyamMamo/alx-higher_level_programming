@@ -8,6 +8,6 @@ WHERE id NOT IN (
     FROM tv_show_genres tsg
     JOIN tv_genres tg
         ON tsg.genre_id = tg.id
-    WHERE tg.name != 'Comedy'
+    WHERE tg.name = 'Comedy'
 )
 ORDER BY title;
