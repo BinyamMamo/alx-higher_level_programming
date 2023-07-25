@@ -1,7 +1,9 @@
 #!/usr/bin/node
-/* The code is making a request to a specified URL and retrieving data.
-It then parses the response
-body as JSON and creates a dictionary called `todoDict`. */
+/**
+ * makes a request to a specified URL and retrieves data
+ * parses the response body as JSON and
+ * creates a dictionary called `todoDict`
+ */
 const request = require('request');
 const url = process.argv[2];
 
