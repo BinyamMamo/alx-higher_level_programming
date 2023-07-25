@@ -1,11 +1,14 @@
 #!/usr/bin/node
+/* The code is making a request to a specified URL and retrieving data.
+It then parses the response
+body as JSON and creates a dictionary called `todoDict`. */
 const request = require('request');
 const url = process.argv[2];
 
 request(url, (err, resp, body) => {
   if (err) { console.log(err); return; }
   const todos = JSON.parse(body);
-  let todoDict = {};
+  const todoDict = {};
   for (const todo of todos) {
     if (todo.completed) {
       if (todo.userId in todoDict) {
