@@ -17,7 +17,8 @@ if __name__ == "__main__":
                     FROM cities c
                     JOIN states s
                         ON c.state_id = s.id
-                    ORDER BY c.id;""")
+                    WHERE s.name = '{}'
+                    ORDER BY c.id;""".format(argv[4]))
     data = db.fetchall()
     for item in data:
         print(item)
