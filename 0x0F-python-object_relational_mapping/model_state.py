@@ -3,7 +3,7 @@
 Contains a `State` class, a SQLAlchemy model that represents
 a table called "states", with columns for id and name.
 """
-from sql_Alchemy import create_engine, Column, Integer, String, MetaData
+from sqlalchemy import create_engine, Column, Integer, String, MetaData
 from sqlAlchemy.ext.declarative import declarative_base
 
 meta = MetaData()
