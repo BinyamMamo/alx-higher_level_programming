@@ -18,7 +18,6 @@ if __name__ == "__main__":
                     WHERE s.name = '{}'
                     ORDER BY c.id;""".format(argv[4]))
     data = db.fetchall()
-    for item in data:
-        print(item[0], sep=', ')
+    print(", ".join([item[0] for item in data]))
     db.close()
     conn.close()
