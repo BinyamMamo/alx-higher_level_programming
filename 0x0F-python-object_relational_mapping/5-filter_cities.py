@@ -19,6 +19,6 @@ if __name__ == "__main__":
                     ORDER BY c.id;""".format(argv[4]))
     data = db.fetchall()
     for item in data:
-        print(type item, end=',')
+        print(type(item), end=',')
     db.close()
     conn.close()
