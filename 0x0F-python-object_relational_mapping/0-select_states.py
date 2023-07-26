@@ -2,11 +2,12 @@
 """
 Establishes a connection to a MySQL database 
 """
-import MySQLdb
-from sys import argv
-
 
 if __name__ == "__main__":
+    import MySQLdb
+    from sys import argv
+
+
     username = argv[1]
     pwd = argv[2]
     dbname = argv[3]
