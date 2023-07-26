@@ -11,9 +11,9 @@ if __name__ == "__main__":
                            password=argv[2], database=argv[3])
     db = conn.cursor()
     query = """SELECT * FROM states
-                        WHERE states.name LIKE BINARY '{}'
+                        WHERE states.name LIKE BINARY %s
                         ORDER BY id;"""
-    db.execute(query.format(argv[4]))
+    db.execute(query, (argv[4],))
     data = db.fetchall()
     for item in data:
         print(item)
