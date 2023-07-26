@@ -3,13 +3,13 @@
 Contains a `State` class, a SQLAlchemy model that represents
 a table called "states", with columns for id and name.
 """
+from sqlalchemy import create_engine, Column, Integer, String, MetaData
+from sqlAlchemy.ext.declarative import declarative_base
+
+
+meta = MetaData()
+Base = declarative_base(metadata=meta)
 if __name__ == "__main__":
-    from sqlalchemy import create_engine, Column, Integer, String, MetaData
-    from sqlAlchemy.ext.declarative import declarative_base
-
-    meta = MetaData()
-    Base = declarative_base(metadata=meta)
-
     class State(Base):
         """
         Defines a SQLAlchemy model class called `State`
