@@ -11,7 +11,7 @@ if __name__ == "__main__":
                            password=argv[2], database=argv[3])
     db = conn.cursor()
     db.execute("""SELECT
-                        c.name,
+                        c.name
                     FROM cities c
                     JOIN states s
                         ON c.state_id = s.id
