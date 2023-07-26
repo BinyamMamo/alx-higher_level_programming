@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Establishes a connection to a MySQL database 
+Establishes a connection to a MySQL database
 """
 
 if __name__ == "__main__":
