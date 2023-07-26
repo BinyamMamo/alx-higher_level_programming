@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+# establishes a connection to a MySQL database 
+# and executes a query to retrieve all the
+# data from the "states" table.
 import MySQLdb
 from sys import argv
+
+
 username = argv[1]
 pwd = argv[2]
 dbname = argv[3]
