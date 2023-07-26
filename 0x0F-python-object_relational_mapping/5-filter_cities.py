@@ -11,9 +11,7 @@ if __name__ == "__main__":
                            password=argv[2], database=argv[3])
     db = conn.cursor()
     db.execute("""SELECT
-                        c.id,
                         c.name,
-                        s.name
                     FROM cities c
                     JOIN states s
                         ON c.state_id = s.id
@@ -21,6 +19,6 @@ if __name__ == "__main__":
                     ORDER BY c.id;""".format(argv[4]))
     data = db.fetchall()
     for item in data:
-        print(item)
+        print(item, end=',')
     db.close()
     conn.close()
