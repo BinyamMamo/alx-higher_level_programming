@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# Lists all states from the database hbtn_0e_0_usa.
-# Usage: ./0-select_states.py <mysql username> \
-#                             <mysql password> \
-#                             <database name>
+""" 
+Establishes a connection to a MySQL database 
+and executes a query to retrieve all the
+data from the "states" table.
+"""
 import MySQLdb
 from sys import argv
 
