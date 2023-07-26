@@ -4,7 +4,7 @@ Contains a `State` class, a SQLAlchemy model that represents
 a table called "states", with columns for id and name.
 """
 
-if __name__ == __main__:
+if __name__ == "__main__":
     from sqlalchemy import create_engine, Column, Integer, String, MetaData
     from sqlAlchemy.ext.declarative import declarative_base
 
