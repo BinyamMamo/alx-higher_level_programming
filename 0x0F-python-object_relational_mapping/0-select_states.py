@@ -12,5 +12,6 @@ if __name__ == "__main__":
     db = conn.cursor()
     db.execute("SELECT * FROM states;")
     data = db.fetchall()
-    print(data)
+    for item in data:
+        print(item)
     conn.close()
