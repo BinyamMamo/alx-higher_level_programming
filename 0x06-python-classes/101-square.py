@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-# 101-square.py
-# Brennan D Baraban <375@holbertonschool.com>
-"""Define a class Square."""
+"""
+Creates a square class
+"""
 
 
 class Square:

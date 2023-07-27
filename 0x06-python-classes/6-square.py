@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Creates a square class and adds a position attribute
+to position the square on the screen when printed
+"""
+
 
 class Square:
     """Represent a square."""

@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Creates a square class with a setter
+for the private attribute size
+"""
+
 
 class Square:
     """Represent a square."""

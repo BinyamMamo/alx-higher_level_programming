@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Creates a square class and adds a method
+to print the square with the '#' character
+"""
+
 
 class Square:
     """Represent a square."""
