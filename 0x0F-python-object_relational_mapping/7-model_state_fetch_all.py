@@ -15,4 +15,5 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     result = session.query(State).all()
-    print(result)        
+    for data in result:
+        print(result)        
