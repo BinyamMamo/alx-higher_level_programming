@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Creates a connection to a MySQL database using SQLAlchemy in Python
+"""
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
