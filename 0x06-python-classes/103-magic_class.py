@@ -22,13 +22,13 @@ class MagicClass:
             raise TypeError('radius must be a number')
         self.__radius = radius
 
-    def area(self) -> float:
+    def area(self):
         """
         Returns the area of the circle.
         """
         return self.__radius ** 2 * math.pi
 
-    def circumference(self) -> float:
+    def circumference(self):
         """
         Returns the circumference of the circle.
         """
