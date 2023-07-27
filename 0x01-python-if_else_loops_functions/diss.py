@@ -1,3 +1,5 @@
+#!/usr/bin/python3
 from dis import dis
-magic_calculation = __import__()
-dis(magic_calculation)
+from sys import argv
+mgc = __import__(f'{argv[1]}').magic_calculation
+dis(mgc)
