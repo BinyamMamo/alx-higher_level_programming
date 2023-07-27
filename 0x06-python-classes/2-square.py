@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Creates a square class and creates optional attribute size
+after validating it
+"""
+
 
 class Square:
     """Represent a square."""
