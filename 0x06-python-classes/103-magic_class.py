@@ -9,7 +9,7 @@ class MagicClass:
     """
     A class that represents a circle with a given radius.
     """
-    def __init__(self, radius: float) -> None:
+    def __init__(self, radius=0):
         """
         Initializes the MagicClass object with the given radius.
         Raises a TypeError if the radius is not a number.
