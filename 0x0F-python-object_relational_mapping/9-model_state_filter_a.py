@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Establishes a connection to a MySQL database using the provided
-command line arguments and fetches the first row of the States stable
+Print all states containing the letter 'a' in their name sorted by id
 """
 if __name__ == "__main__":
     from model_state import Base, State
