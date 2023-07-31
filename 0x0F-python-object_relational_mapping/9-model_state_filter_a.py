@@ -13,8 +13,5 @@ if __name__ == "__main__":
                            3306/{}""".format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(engine)
     session = Session()
-    data = session.query(State).order_by(State.id).filter(State.id == 7).first()
-    if data is not None:
-        print(data.id, ": ", data.name, sep="")
-    else:
-        print("Nothing")
+    data = session.query(State).order_by(State.id).filter(State.name.like("%a%")).all()
+    print(*[f"{d.id}: {d.name}" for d in data], sep="\n")
