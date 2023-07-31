@@ -13,5 +13,5 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     data = session.query(State).order_by(State.id)
-    data = data.filter(State.name.like(f"%{argv[4]}%")).first()
+    data = data.filter(State.name.like(f"{argv[4]}")).first()
     print(data.id if data is not None else "Not found")
