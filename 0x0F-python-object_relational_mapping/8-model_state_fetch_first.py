@@ -17,4 +17,4 @@ if __name__ == "__main__":
     if data is not None:
         print(data.id, ": ", data.name, sep="")
     else:
-        print()
+        print("Nothing")
