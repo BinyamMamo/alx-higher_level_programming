@@ -15,5 +15,5 @@ class State(Base):
     """Defines a SQLAlchemy model class called `State`
     """
     __tablename__ = "states"
-    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
