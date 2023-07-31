@@ -13,5 +13,6 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
     data = session.query(State).order_by(State.id).filter(State.name.like("%a%")).all()
-    if (data is not None):
-        print(*[f"{d.id}: {d.name}" for d in data], sep="\n")
+    for d in data:
+        if d is not None:
+            print(d.id, ": ", d.name, sep="")
