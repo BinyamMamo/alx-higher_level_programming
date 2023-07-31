@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Establishes a connection to a MySQL database and
 retrieves data from a table called `State`
@@ -8,7 +9,7 @@ if __name__ == "__main__":
     from sqlalchemy.orm import sessionmaker
     from sys import argv
     from pprint import pprint
-    #                                       user pass            db
+    #                                       user:pass            db
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}\
                            ".format(argv[1], argv[2], argv[3]))
     Base.metadata.create_all(engine)
