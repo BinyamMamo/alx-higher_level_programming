@@ -8,11 +8,9 @@ if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     from sys import argv
-    from pprint import pprint
-    #                                       user:pass            db
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}\
-                           ".format(argv[1], argv[2], argv[3]))
-    Base.metadata.create_all(engine)
+
+    engine = create_engine("""mysql+mysqldb://{}:{}@localhost:
+                           3306/{}""".format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(engine)
     session = Session()
     data = session.query(State).order_by(State.id).all()
