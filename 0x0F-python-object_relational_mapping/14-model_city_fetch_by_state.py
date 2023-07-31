@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+creates a session to a MySQL database and queries all the cities
+in the database, ordered by their ID; then prints the name of
+the state, ID, and name of each city.
+"""
 
 if __name__ == "__main__":
     from model_city import City
