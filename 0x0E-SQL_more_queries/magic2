@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# Create .sql files
-touch 16-shows_by_genre.sql 100-not_my_genres.sql 101-not_a_comedy.sql
-
-# Add comments to the first line of each file
-echo "-- List all genres not linked to the show Dexter" > 16-shows_by_genre.sql
-echo "-- List all shows without the genre Comedy in the database hbtn_0d_tvshows" > 100-not_my_genres.sql
-echo "-- List all shows with a score greater or equal to 8.5 in the database hbtn_0d_tvshows" > 101-not_a_comedy.sql
