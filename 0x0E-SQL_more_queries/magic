@@ -1,0 +1,59 @@
+#!/bin/bash
+# This script creates the SQL files for the project
+
+# Create the file 0-privileges.sql and add a comment
+echo "-- List privileges of user_0d_1 and user_0d_2" > 0-privileges.sql
+
+# Create the file 1-create_user.sql and add a comment
+echo "-- Create user user_0d_1 with all privileges" > 1-create_user.sql
+
+# Create the file 2-create_read_user.sql and add a comment
+echo "-- Create database hbtn_0d_2 and user user_0d_2" > 2-create_read_user.sql
+
+# Create the file 3-force_name.sql and add a comment
+echo "-- Create table force_name with name not null" > 3-force_name.sql
+
+# Create the file 4-never_empty.sql and add a comment
+echo "-- Create table id_not_null with id and name not null" > 4-never_empty.sql
+
+# Create the file 5-unique_id.sql and add a comment
+echo "-- Create table unique_id with id unique and name not null" > 5-unique_id.sql
+
+# Create the file 6-states.sql and add a comment
+echo "-- Create database hbtn_0d_usa and table states" > 6-states.sql
+
+# Create the file 7-cities.sql and add a comment
+echo "-- Create database hbtn_0d_usa and table cities" > 7-cities.sql
+
+# Create the file 8-cities_of_california_subquery.sql and add a comment
+echo "-- List cities of California using subquery" > 8-cities_of_california_subquery.sql
+
+# Create the file 9-cities_by_state_join.sql and add a comment
+echo "-- List cities using JOIN statement" > 9-cities_by_state_join.sql
+
+# Create the file 10-genre_id_by_show.sql and add a comment
+echo "-- List shows with genre using JOIN statement" > 10-genre_id_by_show.sql
+
+# Create the file 11-genre_id_all_shows.sql and add a comment
+echo "-- List shows with genre using LEFT JOIN statement" > 11-genre_id_all_shows.sql
+
+# Create the file 12-no_genre.sql and add a comment
+echo "-- List shows without genre using LEFT JOIN statement" > 12-no_genre.sql
+
+# Create the file 13-count_shows_by_genre.sql and add a comment
+echo "-- List genres with number of shows using JOIN statement" > 13-count_shows_by_genre.sql
+
+# Create the file 14-my_genres.sql and add a comment
+echo "-- List genres of Dexter using JOIN statement" > 14-my_genres.sql
+
+# Create the file 15-comedy_only.sql and add a comment
+echo "-- List Comedy shows using JOIN statement" > 15-comedy_only.sql
+
+# Create the file 16-shows_by_genre.sql and add a comment
+echo "-- List shows and genres using JOIN statement" > 16-shows_by_genre.sql
+
+# Make the files executable
+chmod u+x *.sql
+
+# Exit the script
+exit 0
