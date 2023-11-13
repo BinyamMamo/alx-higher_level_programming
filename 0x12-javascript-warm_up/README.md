@@ -1,6 +1,6 @@
 # 0x12 Javascript warm up
 
-<p align="center">
+<p align="left">
     <img alt="JS sticker" width="50%" src="https://miro.medium.com/v2/resize:fit:960/1*-tOldEbfjijxn9VqZeULqg.gif">
 </p>
 
