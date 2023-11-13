@@ -1,7 +1,7 @@
 # 0x12 Javascript warm up
 
 <p align="center">
-    <img alt="JS sticker" src="https://miro.medium.com/v2/resize:fit:1064/0*T7nlzhJ0eOb6YyVy.gif">
+    <img alt="JS sticker" width="85%" src="https://miro.medium.com/v2/resize:fit:640/0*T7nlzhJ0eOb6YyVy.gif">
 </p>
 
 This project is an introduction to the basics of JavaScript, a high-level, interpreted scripting language. JavaScript is used to create dynamic and interactive web pages.
