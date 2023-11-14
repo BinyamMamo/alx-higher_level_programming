@@ -2,6 +2,4 @@
 
 /* blueprint for creating rectangle objects */
 class Rectangle {
-  constructor () {
-  }
 }
