@@ -1,16 +1,20 @@
 #!/usr/bin/python3
+"""
+Contains a `State` class, a SQLAlchemy model that represents
+a table called "states", with columns for id and name.
+"""
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+
+meta = MetaData()
+Base = declarative_base(metadata=meta)
+
+
 class State(Base):
-	__table_name = "states"
-	id = Column(Integer, autoincrement=True, unique=True,
-                nullable=False, primary_key=True)
-	name = Column(String(128), nullable=False)
-
-
-if __name__ == "__main__":
-	from sqlalchemy import create_engine, Column, Integer, String
-	
-	engine = create_engine("mysql+mysqldb://localhost:3306")
-
+    """Defines a SQLAlchemy model class called `State`
+    """
+    __tablename__ = "states"
+    id = Column(Integer, unique=True, nullable=False,
+                primary_key=True, autoincrement=True)
+    name = Column(String(128), nullable=False)
