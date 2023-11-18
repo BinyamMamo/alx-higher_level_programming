@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+class State(Base):
+	__table_name = "states"
+	id = Column(Integer, autoincrement=True, unique=True,
+                nullable=False, primary_key=True)
+	name = Column(String(128), nullable=False)
+
+
+if __name__ == "__main__":
+	from sqlalchemy import create_engine, Column, Integer, String
+	
+	engine = create_engine("mysql+mysqldb://localhost:3306")
+
