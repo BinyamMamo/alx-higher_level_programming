@@ -4,17 +4,20 @@ displays data from a database using mysqldb module
 """
 
 if __name__ == "__main__":
-	import MySQLdb
-	from sys import argv
+    import MySQLdb
+    from sys import argv
 
-	con = MySQLdb.connect(host='localhost', user=argv[1], passwd=argv[2], db=argv[3])
-	cur = con.cursor()
+    con = MySQLdb.connect(host='localhost',
+                          user=argv[1],
+                          passwd=argv[2],
+                          db=argv[3])
+    cur = con.cursor()
 
-	cur.execute("SELECT * FROM `states` ORDER BY id;")
-	rows = cur.fetchall()
+    cur.execute("SELECT * FROM `states` ORDER BY id;")
+    rows = cur.fetchall()
 
-	for row in rows:
-		print(row)
+    for row in rows:
+        print(row)
 
-	cur.close()
-	con.close()
+    cur.close()
+    con.close()
