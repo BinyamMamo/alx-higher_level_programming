@@ -4,17 +4,15 @@ Connects to a MySQL database and executes a query to
 retrieve data from a table called "states"
 """
 
-if __name__ == "__main__":
-    import MySQLdb
-    from sys import argv
+from sys import argv
+import MySQLdb
 
-    conn = MySQLdb.connect(host='localhost', port=3306, user=argv[1],
-                           password=argv[2], database=argv[3])
-    db = conn.cursor()
-    db.execute("SELECT * FROM states WHERE name LIKE BINARY '%s'",
-               (argv[4], ))
-    data = db.fetchall()
-    for item in data:
-        print(item)
-    db.close()
-    conn.close()
+if __name__ == "__main__":
+    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
+    cur = db.cursor()
+    cur.execute("""SELECT * FROM states
+                WHERE name LIKE BINARY '{}'
+                ORDER BY states.id ASC""".format(argv[4]).strip("'"))
+    rows = cur.fetchall()
+    for state in rows:
+        print(state)
