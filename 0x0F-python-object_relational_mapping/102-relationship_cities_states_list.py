@@ -1,4 +1,7 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
+"""
+Connects to a database and prints cities with their corresponding states.
+"""
 
 from relationship_city import City
 from relationship_state import State
