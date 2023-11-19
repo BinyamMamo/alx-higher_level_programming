@@ -2,6 +2,7 @@
 """
 Print all states containing the letter 'a' in their name sorted by id
 """
+
 if __name__ == "__main__":
     from model_state import Base, State
     from sqlalchemy import create_engine
@@ -12,6 +13,6 @@ if __name__ == "__main__":
                            3306/{}""".format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(engine)
     session = Session()
-    row = session.query(State).filter(State.id == 2).first()
+    row = session.query(State).filter_by(State.id == 2).first()
     row.name = "New Mexico"
     session.commit()
