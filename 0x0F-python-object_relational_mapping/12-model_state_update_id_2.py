@@ -13,6 +13,6 @@ if __name__ == "__main__":
                            3306/{}""".format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(engine)
     session = Session()
-    row = session.query(State).filter_by(State.id == 2).first()
+    row = session.query(State).filter_by(id=2).first()
     row.name = "New Mexico"
     session.commit()
