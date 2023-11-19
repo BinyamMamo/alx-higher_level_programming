@@ -14,8 +14,7 @@ if __name__ == "__main__":
                            3306/{}""".format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(engine)
     session = Session()
-    data = session.query(State).order_by(State.id)
-    data = data.filter(State.id == 7).first()
+    data = session.query(State).order_by(State.id).first()
     if data is not None:
         print(data.id, ": ", data.name, sep="")
     else:
