@@ -1,6 +1,6 @@
 # 0x11. Python - Network #1
 
-<p align="center">
+<p align="left">
     <img width="75%" src="https://realpython.com/cdn-cgi/image/width=640,format=auto/https://files.realpython.com/media/Python-Sockets-Tutorial_Watermarked.aebb960a567a.jpg">
 </p>
 
