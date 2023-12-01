@@ -1,7 +1,7 @@
 # 0x11. Python - Network #1
 
 <p align="center">
-    <img width="100%" src="https://realpython.com/cdn-cgi/image/width=640,format=auto/https://files.realpython.com/media/Python-Sockets-Tutorial_Watermarked.aebb960a567a.jpg">
+    <img width="75%" src="https://realpython.com/cdn-cgi/image/width=640,format=auto/https://files.realpython.com/media/Python-Sockets-Tutorial_Watermarked.aebb960a567a.jpg">
 </p>
 
 This project is part of the ALX Software Engineering curriculum and focuses on networking with Python. It covers the use of `urllib` and `requests` packages to fetch internet resources, handle HTTP requests, and work with JSON data.
