@@ -4,8 +4,8 @@ adding an input letter using the requests package
 
 Usage: ./8-json_api.py <letter>
 """
-import sys
 import requests
+import sys
 
 if __name__ == "__main__":
     value = {"q": ""}
