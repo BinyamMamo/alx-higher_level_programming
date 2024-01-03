@@ -3,6 +3,7 @@
  * makes a request to the Star Wars API (SWAPI)
  * to retrieve information about a specific movie.
  */
+
 const request = require('request');
 const async = require('async');
 
