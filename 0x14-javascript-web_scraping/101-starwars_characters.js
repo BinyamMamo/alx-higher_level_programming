@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/**
+/*
  * makes a request to the Star Wars API (SWAPI)
  * to retrieve information about a specific movie.
  */
@@ -20,7 +20,5 @@ request(url, (err, resp, body) => {
       console.log(JSON.parse(b).name);
       callback();
     });
-  }, (err) => {
-    if (err) { console.log(err); return; }
   });
 });
